@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Main">
+    <br>
+    <img src="logo.png" alt="Luxottica logo" class="logo">
+    <br><br>
+        <ul class="nav">
+          <li class="drop-button"><a href="index.html">Shop</a>
+            <ul class="drop">
+              <li><a href="https://www.ray-ban.com/usa" target="_blank" rel="noopener noreferrer">RayBan</a></li>
+              <li><a href="https://www.oakley.com/" target="_blank" rel="noopener noreferrer">Oakley</a></li>
+            </ul>
+          </li>
+          <li class="drop-button"><a href="contact.html">Contact</a>
+            <ul class="drop">
+              <li><a href="mailto:youremail@ucr.edu">Email</a></li>
+              <li><a href="tel:555-555-5555">Phone</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <section class="content">
+          <div class="Text">
+            <br>
+            &emsp;Please contact us if you have any questions or concerns regarding your order.
+            <br><br>
+            <form method="POST" onsubmit="event.preventDefault(); alert('This is a demonstration form for CS8 Lab 5. No email has been sent.');">
+              <input type="hidden" name="action" value="submit">
+              <label for="name">Your name:</label><br>
+              <input name="name" id="name" type="text"><br>
+              <label for="email">Your email:</label><br>
+              <input name="email" id="email" type="email"><br>
+              <label for="message">Your message:</label><br>
+              <textarea name="message" id="message" rows="7" cols="30"></textarea><br>
+              <input type="submit" value="Send email">
+            </form>
+          </div>
+          <div class="Picture">
+            <iframe title="University of California Riverside map" src="https://www.google.com/maps?q=University%20of%20California%2C%20Riverside%2C%20900%20University%20Ave%2C%20Riverside%2C%20CA%2092521&amp;output=embed" width="400" height="280" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+  </div>
+</body>
+</html>
